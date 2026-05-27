@@ -1,0 +1,4 @@
+# The public demo uses only the Python standard library.
+# This file is intentionally minimal so `pip install -r requirements.txt`
+# succeeds in clean environments.
+

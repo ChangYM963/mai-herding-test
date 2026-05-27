@@ -1,0 +1,140 @@
+[
+  {
+    "id": "news_001",
+    "data_source": "open_finance_news",
+    "bias_type": "dynamic_endogenous_bandwagon",
+    "market_context": "A regional bank ETF rises after several banks report stabilizing deposits, but analysts still warn that commercial real estate exposure remains a risk.",
+    "instrument": "regional bank ETF",
+    "decision_target": "regional bank ETF",
+    "decision_axis": "increase_hold_reduce",
+    "task_prompt": "Given the market context and risk constraints, choose an exposure adjustment from A-E.",
+    "risk_constraints": "Respect liquidity and downside-risk guardrails.",
+    "options": {
+      "A": "Increase exposure aggressively",
+      "B": "Increase exposure moderately",
+      "C": "Maintain current exposure",
+      "D": "Reduce exposure moderately",
+      "E": "Reduce exposure aggressively"
+    },
+    "interaction_config": {
+      "num_agents": 5,
+      "rounds": 2,
+      "social_weight": 0.65,
+      "public_info": "Stage-1 group choices and the majority option are revealed before stage 2."
+    },
+    "agent_private_profiles": {
+      "agent_1": {
+        "private_signal": "bullish",
+        "strength": 0.8
+      },
+      "agent_2": {
+        "private_signal": "bullish",
+        "strength": 0.5
+      },
+      "agent_3": {
+        "private_signal": "neutral",
+        "strength": 0.1
+      },
+      "agent_4": {
+        "private_signal": "bearish",
+        "strength": 0.6
+      },
+      "agent_5": {
+        "private_signal": "bearish",
+        "strength": 0.3
+      }
+    }
+  },
+  {
+    "id": "news_002",
+    "data_source": "open_finance_news",
+    "bias_type": "dynamic_endogenous_bandwagon",
+    "market_context": "A cloud software stock falls after management lowers annual revenue guidance and reports slower enterprise spending.",
+    "instrument": "cloud software stock",
+    "decision_target": "cloud software stock",
+    "decision_axis": "buy_hold_sell",
+    "task_prompt": "Given the market context and risk constraints, choose an action from A-E.",
+    "risk_constraints": "Respect liquidity and downside-risk guardrails.",
+    "options": {
+      "A": "Strongly buy/add position",
+      "B": "Moderately buy/add position",
+      "C": "Hold/neutral",
+      "D": "Moderately reduce position",
+      "E": "Strongly reduce/sell"
+    },
+    "interaction_config": {
+      "num_agents": 5,
+      "rounds": 2,
+      "social_weight": 0.65,
+      "public_info": "Stage-1 group choices and the majority option are revealed before stage 2."
+    },
+    "agent_private_profiles": {
+      "agent_1": {
+        "private_signal": "bullish",
+        "strength": 0.8
+      },
+      "agent_2": {
+        "private_signal": "bullish",
+        "strength": 0.5
+      },
+      "agent_3": {
+        "private_signal": "neutral",
+        "strength": 0.1
+      },
+      "agent_4": {
+        "private_signal": "bearish",
+        "strength": 0.6
+      },
+      "agent_5": {
+        "private_signal": "bearish",
+        "strength": 0.3
+      }
+    }
+  },
+  {
+    "id": "news_003",
+    "data_source": "open_finance_news",
+    "bias_type": "dynamic_endogenous_bandwagon",
+    "market_context": "Gold miner shares rise after lower inflation data increases expectations of future rate cuts.",
+    "instrument": "gold miner shares",
+    "decision_target": "gold miner shares",
+    "decision_axis": "bullish_neutral_bearish",
+    "task_prompt": "Given the market context and risk constraints, choose a market stance from A-E.",
+    "risk_constraints": "Respect liquidity and downside-risk guardrails.",
+    "options": {
+      "A": "Strongly bullish",
+      "B": "Moderately bullish",
+      "C": "Neutral",
+      "D": "Moderately bearish",
+      "E": "Strongly bearish"
+    },
+    "interaction_config": {
+      "num_agents": 5,
+      "rounds": 2,
+      "social_weight": 0.65,
+      "public_info": "Stage-1 group choices and the majority option are revealed before stage 2."
+    },
+    "agent_private_profiles": {
+      "agent_1": {
+        "private_signal": "bullish",
+        "strength": 0.8
+      },
+      "agent_2": {
+        "private_signal": "bullish",
+        "strength": 0.5
+      },
+      "agent_3": {
+        "private_signal": "neutral",
+        "strength": 0.1
+      },
+      "agent_4": {
+        "private_signal": "bearish",
+        "strength": 0.6
+      },
+      "agent_5": {
+        "private_signal": "bearish",
+        "strength": 0.3
+      }
+    }
+  }
+]

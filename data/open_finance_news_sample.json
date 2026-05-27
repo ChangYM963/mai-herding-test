@@ -1,0 +1,27 @@
+[
+  {
+    "id": "news_001",
+    "headline": "Regional bank shares rebound after deposit outflow concerns ease",
+    "context": "A regional bank ETF rises after several banks report stabilizing deposits, but analysts still warn that commercial real estate exposure remains a risk.",
+    "instrument": "regional bank ETF"
+  },
+  {
+    "id": "news_002",
+    "headline": "Cloud software company cuts revenue guidance",
+    "context": "A cloud software stock falls after management lowers annual revenue guidance and reports slower enterprise spending.",
+    "instrument": "cloud software stock"
+  },
+  {
+    "id": "news_003",
+    "headline": "Gold miners rally as rate-cut expectations increase",
+    "context": "Gold miner shares rise after lower inflation data increases expectations of future rate cuts.",
+    "instrument": "gold miner shares",
+    "decision_axis": "bullish_neutral_bearish"
+  },
+  {
+    "id": "news_004",
+    "headline": "Market update",
+    "context": "Stocks moved.",
+    "instrument": ""
+  }
+]
