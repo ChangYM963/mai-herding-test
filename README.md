@@ -31,9 +31,7 @@ open financial inputs
 
 The benchmark-construction pipeline converts open financial news, market events, and scenario-specific decision contexts into validated five-option decision tasks. In the full framework, the construction stages can be implemented as specialized construction agents. In this public demo, the same stages are implemented as transparent sequential Python functions, so the released code is easy to inspect and does not depend on LangGraph or any provider-specific LLM orchestration.
 
-<p align="center">
-  <img src="figures/auto_pipline.png" alt="Automated benchmark construction pipeline" width="760">
-</p>
+<img src="figures/auto_pipline.png" alt="Automated benchmark construction pipeline" style="width:100%; max-width:980px;">
 
 ---
 
@@ -149,9 +147,7 @@ The evaluation protocol follows the paper:
 5. agents answer again at stage 2;
 6. minority-to-majority drift is measured using MAI.
 
-<p align="center">
-  <img src="figures/two_stage.png" alt="Two-stage herding protocol" width="760">
-</p>
+<img src="figures/two_stage.png" alt="Two-stage herding protocol" style="width:100%; max-width:980px;">
 
 Run:
 
@@ -274,17 +270,11 @@ The full paper reports three main observations:
 
 Representative result figures are shown below.
 
-<p align="center">
-  <img src="figures/herding_validation.png" alt="Initial herding validation" width="720">
-</p>
+<img src="figures/herding_validation.png" alt="Initial herding validation" style="width:100%; max-width:900px;">
 
-<p align="center">
-  <img src="figures/external_control.png" alt="External control effects" width="720">
-</p>
+<img src="figures/external_control.png" alt="External control effects" style="width:100%; max-width:900px;">
 
-<p align="center">
-  <img src="figures/internal_control.png" alt="Representation-level control effects" width="720">
-</p>
+<img src="figures/internal_control.png" alt="Representation-level control effects" style="width:100%; max-width:900px;">
 
 ---
 
