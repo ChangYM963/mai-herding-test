@@ -172,44 +172,21 @@ A - B - C - D - E
 
 Let $d_m(k)$ be the distance between option $k$ and majority option $m$ on this ordered axis. The alignment weight is:
 
-$$
-w_m(k) = 4 - d_m(k).
-$$
+$$w_m(k) = 4 - d_m(k).$$
 
 The agent-level MAI is:
 
-$$
-\mathrm{MAI}_i^{(t)}(q)
-=
-\sum_{k \in \{A,B,C,D,E\}}
-p_i^{(t)}(k)\, w_{m_q}(k).
-$$
+$$\mathrm{MAI}_i^{(t)}(q) = \sum_{k \in \{A,B,C,D,E\}} p_i^{(t)}(k)\, w_{m_q}(k).$$
 
 The fixed stage-one minority group is:
 
-$$
-\mathcal{M}_{\mathrm{minority}}(q)
-=
-\{\, i \mid c_i^{(1)} \neq m_q \,\}.
-$$
+$$\mathcal{M}_{\mathrm{minority}}(q) = \{\, i \mid c_i^{(1)} \neq m_q \,\}.$$
 
 The scenario-level herding effect is:
 
-$$
-\overline{\mathrm{MAI}}_{\mathrm{minority}}^{(t)}(q)
-=
-\frac{1}{|\mathcal{M}_{\mathrm{minority}}(q)|}
-\sum_{i \in \mathcal{M}_{\mathrm{minority}}(q)}
-\mathrm{MAI}_i^{(t)}(q).
-$$
+$$\overline{\mathrm{MAI}}_{\mathrm{minority}}^{(t)}(q) = \frac{1}{|\mathcal{M}_{\mathrm{minority}}(q)|} \sum_{i \in \mathcal{M}_{\mathrm{minority}}(q)} \mathrm{MAI}_i^{(t)}(q).$$
 
-$$
-\Delta \mathrm{MAI}(q)
-=
-\overline{\mathrm{MAI}}_{\mathrm{minority}}^{(2)}(q)
--
-\overline{\mathrm{MAI}}_{\mathrm{minority}}^{(1)}(q).
-$$
+$$\Delta \mathrm{MAI}(q) = \overline{\mathrm{MAI}}_{\mathrm{minority}}^{(2)}(q) - \overline{\mathrm{MAI}}_{\mathrm{minority}}^{(1)}(q).$$
 
 Positive `Delta MAI(q)` indicates that stage-one minority agents moved closer to the stage-one majority after social exposure.
 
