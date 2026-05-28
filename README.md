@@ -86,6 +86,7 @@ figures/
   data.png                           # example benchmark item
   two_stage.png                      # two-stage herding protocol
   herding_validation.png             # representative validation result
+  external_control_sensitivity.png   # control-strength sensitivity analysis
   external_control.png               # external mitigation result
   internal_control.png               # representation-level mitigation result
 
@@ -207,6 +208,12 @@ posthoc-only:
   the stage-two prompt is unchanged;
   the estimated stage-two response distribution is corrected after generation.
 ```
+
+Before the matched baseline-control comparison, the full experiment validates the control-strength parameter by sweeping candidate values. This sensitivity analysis is useful in the repository because it shows that the external-control strength is behaviorally meaningful: posthoc correction has a monotonic mitigation pattern, while prompt-based control is nonlinear but tunable.
+
+<img src="figures/external_control_sensitivity.png" alt="Control-strength sensitivity of external herd mitigation" style="width:100%; max-width:980px;">
+
+Panel A shows the posthoc correction route. As control strength increases, the MAI-based herding intensity decreases monotonically, indicating that the correction coefficient behaves like a stable dose parameter. Panel B shows the structured prompt route. The response is not monotonic, but the curve still changes systematically with the control-strength value, suggesting that prompt-based mitigation is tunable but model- and setting-dependent. This motivates reporting the two routes separately rather than treating external control as a single mechanism.
 
 Run post-hoc correction:
 
