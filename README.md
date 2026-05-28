@@ -209,11 +209,19 @@ posthoc-only:
   the estimated stage-two response distribution is corrected after generation.
 ```
 
-Before the matched baseline-control comparison, the full experiment validates the control-strength parameter by sweeping candidate values. This sensitivity analysis is useful in the repository because it shows that the external-control strength is behaviorally meaningful: posthoc correction has a monotonic mitigation pattern, while prompt-based control is nonlinear but tunable.
+The command-line route name is `posthoc-only` for compatibility with the demo script; in the paper, this route is referred to as post-hoc probability correction.
+
+### Control-Strength Validation
+
+Before selecting the operating points reported in the paper, we ran a strength sweep for both external mitigation routes. This plot is included here because the full sweep figure is omitted from the main paper due to space limits. It shows that the control-strength parameter is behaviorally meaningful rather than arbitrary: post-hoc correction produces a monotonic dose-response in MAI-based herd intensity, while prompt-based control produces nonlinear but systematic changes in herd prevalence.
 
 <img src="figures/external_control_sensitivity.png" alt="Control-strength sensitivity of external herd mitigation" style="width:100%; max-width:980px;">
 
-Panel A shows the posthoc correction route. As control strength increases, the MAI-based herding intensity decreases monotonically, indicating that the correction coefficient behaves like a stable dose parameter. Panel B shows the structured prompt route. The response is not monotonic, but the curve still changes systematically with the control-strength value, suggesting that prompt-based mitigation is tunable but model- and setting-dependent. This motivates reporting the two routes separately rather than treating external control as a single mechanism.
+Panel A summarizes the post-hoc correction route. As the control strength increases, MAI-based herd intensity decreases monotonically, indicating that the correction coefficient behaves like a stable dose parameter. Panel B summarizes the structured prompt route. The response is not monotonic, but it changes systematically with the control-strength value, suggesting that prompt-based mitigation is tunable but more model- and setting-dependent.
+
+This sensitivity plot summarizes the full experimental sweep. The lightweight public demo exposes the same `--control-level` interface, but it is not intended to reproduce the complete commercial-model sweep without the full benchmark instances and model outputs.
+
+### Running the Public Demo
 
 Run post-hoc correction:
 
@@ -237,7 +245,7 @@ python src/run_external_control.py \
   --output results/external_prompt.json
 ```
 
-The full experiments validate control-strength parameters through a sweep and then compare selected operating points against matched no-control baselines. The public demo keeps the two routes separate and illustrates how MAI changes before and after intervention.
+The public demo keeps the two routes separate and illustrates how MAI changes before and after intervention.
 
 ---
 
