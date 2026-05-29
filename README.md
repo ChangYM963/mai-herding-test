@@ -1,8 +1,8 @@
-# Benchmarking Herding in Financial Multi-Agent LLM Systems
+# Context-Adaptive Herding Evaluation for Financial Multi-Agent LLM Systems
 
 This repository provides a compact public demo for the paper:
 
-**Benchmarking Herding in Financial Multi-Agent LLM Systems: Automated Construction, Measurement, and Mitigation**
+**A Context-Adaptive Benchmarking Framework for Measuring Herding in Financial Multi-Agent LLM Systems**
 
 The demo is designed as a minimal companion implementation rather than the full private experiment codebase. It illustrates the core workflow of the paper:
 
