@@ -1,27 +1,16 @@
 [
   {
-    "id": "news_001",
-    "headline": "Regional bank shares rebound after deposit outflow concerns ease",
-    "context": "A regional bank ETF rises after several banks report stabilizing deposits, but analysts still warn that commercial real estate exposure remains a risk.",
-    "instrument": "regional bank ETF"
+    "id": "synthetic_case_001",
+    "headline": "Multi-signal stress event creates disagreement over exposure to a rate-sensitive regional bank ETF",
+    "context": "A synthetic regional-bank ETF has fallen sharply over several sessions after a cluster of mid-sized lenders reported higher deposit beta, weaker net-interest-margin guidance, and rising provisions tied to commercial real-estate loans. The selloff accelerated when short-term funding spreads widened and several desks reduced year-end liquidity assumptions for smaller financial institutions. However, the latest supervisory update did not identify an immediate solvency problem, and overnight funding conditions have partly normalized after a temporary liquidity facility was expanded. Some analysts argue that the decline has over-discounted near-term credit losses because capital ratios remain above regulatory minimums and management teams have slowed loan growth. Others warn that unrealized securities losses, office-property exposure, and deposit competition could keep earnings under pressure for several quarters. The portfolio currently has a modest allocation to the ETF as a cyclical recovery position. The investment committee must decide whether to increase, maintain, or reduce exposure before the next rebalance while considering liquidity, drawdown limits, and the possibility that peer investors may be reacting to the same public stress indicators.",
+    "instrument": "rate-sensitive regional bank ETF",
+    "risk_constraints": "Avoid concentrated exposure to smaller financial institutions, preserve liquidity under stressed trading conditions, and limit incremental drawdown contribution to the portfolio risk budget.",
+    "decision_axis": "increase_hold_reduce"
   },
   {
-    "id": "news_002",
-    "headline": "Cloud software company cuts revenue guidance",
-    "context": "A cloud software stock falls after management lowers annual revenue guidance and reports slower enterprise spending.",
-    "instrument": "cloud software stock"
-  },
-  {
-    "id": "news_003",
-    "headline": "Gold miners rally as rate-cut expectations increase",
-    "context": "Gold miner shares rise after lower inflation data increases expectations of future rate cuts.",
-    "instrument": "gold miner shares",
-    "decision_axis": "bullish_neutral_bearish"
-  },
-  {
-    "id": "news_004",
-    "headline": "Market update",
-    "context": "Stocks moved.",
+    "id": "synthetic_reject_004",
+    "headline": "Brief market note",
+    "context": "Markets moved.",
     "instrument": ""
   }
 ]

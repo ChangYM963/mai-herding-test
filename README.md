@@ -78,8 +78,8 @@ minority_switch_rate_to_majority
 
 ```text
 data/
-  open_finance_news_sample.json      # small raw financial-input examples
-  bandwagon_sample.json              # constructed benchmark examples
+  open_finance_news_sample.json      # synthetic long-form financial-input example
+  bandwagon_sample.json              # constructed synthetic benchmark example
 
 figures/
   auto_pipline.png                   # benchmark construction pipeline
@@ -133,7 +133,7 @@ python src/construct_benchmark.py \
   --report results/construction_report.json
 ```
 
-The public script uses deterministic rules and anonymized examples instead of the full private construction prompts. It preserves the same auditable stages and output schema used by the paper, but it is intentionally a simplified demo rather than the complete construction system.
+The public script uses deterministic rules and one synthetic long-form example instead of the full private construction prompts and benchmark items. The released example is deliberately not a real news item or a sample from the full benchmark; it is a safe demonstration of how a complex financial context is rendered into the benchmark schema. The script preserves the same auditable stages and output schema used by the paper, but it is intentionally a simplified demo rather than the complete construction system.
 
 ---
 
