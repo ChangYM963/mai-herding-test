@@ -330,7 +330,7 @@ If you use this repository, please cite the paper:
 
 ```bibtex
 @misc{chang2026benchmarking,
-  title  = {Benchmarking Herding in Financial Multi-Agent LLM Systems: Automated Construction, Measurement, and Mitigation},
+  title  = {A Context-Adaptive Benchmarking Framework for Measuring Herding in Financial Multi-Agent LLM Systems},
   author = {Chang, Yiming and Liu, Zhuang},
   year   = {2026}
 }
