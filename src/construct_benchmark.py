@@ -32,11 +32,11 @@ DEFAULT_OPTIONS = {
     },
 }
 DEFAULT_AGENT_PRIVATE_PROFILES = {
-    "agent_1": {"private_signal": "bullish", "strength": 0.80},
-    "agent_2": {"private_signal": "bullish", "strength": 0.50},
-    "agent_3": {"private_signal": "neutral", "strength": 0.10},
-    "agent_4": {"private_signal": "bearish", "strength": 0.60},
-    "agent_5": {"private_signal": "bearish", "strength": 0.30},
+    "agent_1": {"private_signal": "positive_prior", "strength": 0.80},
+    "agent_2": {"private_signal": "positive_prior", "strength": 0.50},
+    "agent_3": {"private_signal": "neutral_prior", "strength": 0.10},
+    "agent_4": {"private_signal": "negative_prior", "strength": 0.60},
+    "agent_5": {"private_signal": "negative_prior", "strength": 0.30},
 }
 
 

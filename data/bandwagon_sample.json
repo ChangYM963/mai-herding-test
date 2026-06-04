@@ -24,23 +24,23 @@
     },
     "agent_private_profiles": {
       "agent_1": {
-        "private_signal": "bullish",
+        "private_signal": "positive_prior",
         "strength": 0.8
       },
       "agent_2": {
-        "private_signal": "bullish",
+        "private_signal": "positive_prior",
         "strength": 0.5
       },
       "agent_3": {
-        "private_signal": "neutral",
+        "private_signal": "neutral_prior",
         "strength": 0.1
       },
       "agent_4": {
-        "private_signal": "bearish",
+        "private_signal": "negative_prior",
         "strength": 0.6
       },
       "agent_5": {
-        "private_signal": "bearish",
+        "private_signal": "negative_prior",
         "strength": 0.3
       }
     }

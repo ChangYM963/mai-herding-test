@@ -124,6 +124,8 @@ agent_private_profiles
 options A-E
 ```
 
+The `agent_private_profiles` field denotes synthetic private priors used only to induce heterogeneous initial judgments across agents. It is not a personality profile or a full agent persona. In the public demo, these priors are intentionally abstract labels such as `positive_prior`, `neutral_prior`, and `negative_prior`.
+
 Run:
 
 ```bash

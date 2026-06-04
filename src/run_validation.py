@@ -20,8 +20,11 @@ from metrics import (
 OPTIONS = ["A", "B", "C", "D", "E"]
 PRIVATE_SIGNAL_PRIORS = {
     "bullish": ["A", "B", "B", "C"],
+    "positive_prior": ["A", "B", "B", "C"],
     "neutral": ["B", "C", "C", "D"],
+    "neutral_prior": ["B", "C", "C", "D"],
     "bearish": ["C", "D", "D", "E"],
+    "negative_prior": ["C", "D", "D", "E"],
 }
 
 
@@ -33,7 +36,7 @@ def stable_index(*parts: str) -> int:
 def profile_for_agent(scenario: Dict, agent_id: str) -> Dict:
     return scenario.get("agent_private_profiles", {}).get(
         agent_id,
-        {"private_signal": "neutral", "strength": 0.1},
+        {"private_signal": "neutral_prior", "strength": 0.1},
     )
 
 
